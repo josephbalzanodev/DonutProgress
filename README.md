@@ -40,3 +40,4 @@ As usual 😒
             app:colors="#C3C3E6,#BBA0CA,#B370B0"
             app:icons="ic_car,ic_subway,ic_boat"/>
 ```
+![is only a sample](http://url/to/img.png)
