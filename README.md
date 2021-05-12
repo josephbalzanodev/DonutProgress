@@ -1,13 +1,28 @@
-# DonutProgress
+# DonutProgress 🚀
  
+ [![](https://jitpack.io/v/josephbalzanodev/DonutProgress.svg)](https://jitpack.io/#josephbalzanodev/DonutProgress)
+
 Now this readme is very poooor 😄
 
-To implement:
+## To implement
+As usual 😒 
+- in project `build.gradle`:
 ``` 
-ARRIVAAAAA
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+- in app `build.gradle`:
+``` 
+	dependencies {
+	        implementation 'com.github.josephbalzanodev:DonutProgress:0.1'
+	}
 ```
 
-To draw in your application:
+## Useee it 🎉
 ```
         <it.jbalzano.graphics.DonutProgress
             android:id="@+id/donut"
