@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        tools:context=".MainActivity">
+
+        <it.jbalzano.graphics.DonutProgress
+            android:id="@+id/firstDonut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="24dp"
+            app:bgcolor="#33A9ACA9"
+            app:colors="#60495a"
+            app:layout_constraintEnd_toStartOf="@id/secondDonut"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:max="100"
+            app:min="0"
+            app:overlapLast="true"
+            app:thickness="24dp"
+            app:ticks="60" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Normal\n Progress"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/firstDonut"
+            app:layout_constraintEnd_toEndOf="@+id/firstDonut"
+            app:layout_constraintStart_toStartOf="@+id/firstDonut"
+            app:layout_constraintTop_toTopOf="@+id/firstDonut" />
+
+        <it.jbalzano.graphics.DonutProgress
+            android:id="@+id/secondDonut"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="24dp"
+            app:bgcolor="#33A9ACA9"
+            app:colors="#60495a,#3F3244"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/firstDonut"
+            app:layout_constraintTop_toTopOf="parent"
+            app:max="100"
+            app:min="0"
+            app:overlapLast="true"
+            app:thickness="24dp"
+            app:ticks="30,60" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="24dp"
+            android:text="Normal\n Donut"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/secondDonut"
+            app:layout_constraintEnd_toEndOf="@id/secondDonut"
+            app:layout_constraintStart_toStartOf="@id/secondDonut"
+            app:layout_constraintTop_toTopOf="@id/secondDonut" />
+
+        <it.jbalzano.graphics.DonutProgress
+            android:id="@+id/thirdDonut"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="24dp"
+            app:bgcolor="#33A9ACA9"
+            app:colors="#8FC0A9,#68B0AB,#C8D5B9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstDonut"
+            app:max="90"
+            app:min="0"
+            app:overlapLast="true"
+            app:thickness="32dp"
+            app:ticks="30,60,90" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:text="Complete Donut\nwith overlap"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/thirdDonut"
+            app:layout_constraintEnd_toEndOf="@id/thirdDonut"
+            app:layout_constraintStart_toStartOf="@id/thirdDonut"
+            app:layout_constraintTop_toTopOf="@id/thirdDonut" />
+
+        <it.jbalzano.graphics.DonutProgress
+            android:id="@+id/fourDonut"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_margin="24dp"
+            app:bgcolor="#33A9ACA9"
+            app:colors="#C3C3E6,#BBA0CA,#B370B0"
+            app:icons="ic_car,ic_subway,ic_boat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/thirdDonut"
+            app:max="90"
+            app:min="0"
+            app:overlapLast="false"
+            app:thickness="36dp"
+            app:ticks="30,60,90" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            android:text="Complete Donut\nwithout overlap\nwith icon"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/fourDonut"
+            app:layout_constraintEnd_toEndOf="@id/fourDonut"
+            app:layout_constraintStart_toStartOf="@id/fourDonut"
+            app:layout_constraintTop_toTopOf="@id/fourDonut" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

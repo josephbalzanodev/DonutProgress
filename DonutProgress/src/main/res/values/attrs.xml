@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressDonut">
+        <attr name="min" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="ticks" format="string" />
+        <attr name="colors" format="string" />
+        <attr name="icons" format="string" />
+        <attr name="overlapLast" format="boolean" />
+        <attr name="bgcolor" format="color" />
+        <attr name="thickness" format="dimension" />
+    </declare-styleable>
+</resources>
